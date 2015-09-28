@@ -13,8 +13,8 @@ public class Thing
 	
 	public Thing()
 	{
-		age = -99;
-		weight = -.0000005;
+		age = 0;
+		weight = 0.0;
 		name = "";
 	}
 	

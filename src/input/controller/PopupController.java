@@ -15,11 +15,19 @@ public class PopupController
 	
 	public void start()
 	{
+		//Get new name
 		String name = myPopups.getAnswer("Type in your name");
 		myPopups.displayResponse("You typed in: " + name);
 		
+		//Get new age
 		int age;
 		String tempAge = myPopups.getAnswer("Enter you age");
+		
+		while(!isInteger(tempAge))
+		{
+			tempAge = myPopups.getAnswer("Enter a valid integer for 'age'");
+		}
+		
 		if(isInteger(tempAge))
 		{
 			age = Integer.parseInt(tempAge);
@@ -30,8 +38,15 @@ public class PopupController
 		}
 		myPopups.displayResponse("You typed in " + age);
 		
+		//Get new weight
 		double weight;
 		String tempWeight = myPopups.getAnswer("Type in your weight");
+		
+		while(!isDouble(tempWeight))
+		{
+			tempWeight = myPopups.getAnswer("Enter a valid double for 'weight'");
+		}
+		
 		if(isDouble(tempWeight))
 		{
 			weight = Double.parseDouble(tempWeight);
@@ -42,7 +57,10 @@ public class PopupController
 		}
 		myPopups.displayResponse("You typed in: " + weight);
 		
+		//Create new thing object with new values
 		myThing = new Thing(name, age, weight);
+		
+		//Display info for the new thing object
 		myPopups.displayResponse(myThing.toString());
 	}
 	
