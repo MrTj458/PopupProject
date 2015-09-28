@@ -14,12 +14,8 @@ public class PopupController
 	}
 	
 	public void start()
-<<<<<<< HEAD
 	{
 		//Get new name
-=======
-	{	
->>>>>>> origin/master
 		String name = myPopups.getAnswer("Type in your name");
 		myPopups.displayResponse("You typed in: " + name);
 		
