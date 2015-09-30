@@ -70,6 +70,7 @@ public class PopupController
 		
 		try
 		{
+			@SuppressWarnings("unused")
 			int validInteger = Integer.parseInt(input);
 			isInt = true;
 		}
@@ -87,6 +88,7 @@ public class PopupController
 		
 		try
 		{
+			@SuppressWarnings("unused")
 			double validDouble = Double.parseDouble(input);
 			isDouble = true;
 		}

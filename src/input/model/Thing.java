@@ -35,7 +35,7 @@ public class Thing
 	}
 	
 	/**
-	 * Displays all of the variables from the object as a String to be viewed by the user.
+	 * Returns all of the variables from the object as a String to be viewed by the user.
 	 */
 	public String toString()
 	{

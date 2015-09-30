@@ -1,7 +1,7 @@
 package input.controller;
 
 /**
- * Ye olde Runner. Doesen't do much. Just makes the whole program work.
+ * Ye olde Runner. Doesen't do much. Just makes the whole program start.
  * @author thod0127
  */
 public class PopupRunner
