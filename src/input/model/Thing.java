@@ -1,7 +1,7 @@
 package input.model;
 
 /**
- * The object that holds the name, age, and weight for the 'Thing' object.
+ * Contains all of the code for the 'Thing' object.
  * @author thod0127
  * @version 1.0 9/24/15
  */
@@ -11,6 +11,9 @@ public class Thing
 	private int age;
 	private double weight;
 	
+	/**
+	 * Sets default values if values are not given when the object is created.
+	 */
 	public Thing()
 	{
 		name = "";
@@ -18,6 +21,12 @@ public class Thing
 		weight = 0.0;
 	}
 	
+	/**
+	 * Sets the values given to the values in the object on creation.
+	 * @param name
+	 * @param age
+	 * @param weight
+	 */
 	public Thing(String name, int age, double weight)
 	{
 		this.name = name;
@@ -25,6 +34,9 @@ public class Thing
 		this.weight = weight;
 	}
 	
+	/**
+	 * Displays all of the variables from the object as a String to be viewed by the user.
+	 */
 	public String toString()
 	{
 		String thingInfo = name + " is " + age + " years old, and weighs " + weight + "lbs.";
@@ -34,17 +46,17 @@ public class Thing
 	//Getters
 	public String getName()
 	{
-		return this.name;
+		return name;
 	}
 	
 	public int getAge()
 	{
-		return this.age;
+		return age;
 	}
 	
 	public double getWeight()
 	{
-		return this.weight;
+		return weight;
 	}
 	
 	//Setters
