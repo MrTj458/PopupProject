@@ -13,9 +13,9 @@ public class Thing
 	
 	public Thing()
 	{
+		name = "";
 		age = 0;
 		weight = 0.0;
-		name = "";
 	}
 	
 	public Thing(String name, int age, double weight)
@@ -29,5 +29,37 @@ public class Thing
 	{
 		String thingInfo = name + " is " + age + " years old, and weighs " + weight + "lbs.";
 		return thingInfo;
+	}
+	
+	//Getters
+	public String getName()
+	{
+		return this.name;
+	}
+	
+	public int getAge()
+	{
+		return this.age;
+	}
+	
+	public double getWeight()
+	{
+		return this.weight;
+	}
+	
+	//Setters
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public void setWeight(double weight)
+	{
+		this.weight = weight;
 	}
 }
