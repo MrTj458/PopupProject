@@ -10,6 +10,7 @@ public class Thing
 	private String name;
 	private int age;
 	private double weight;
+	private int doesNotMatter;
 	
 	/**
 	 * Sets default values if values are not given when the object is created.
